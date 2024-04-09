@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <style>
+        #loader
+        {
+            width:200px;
+            height: 200px;
+            background: url(https://superstorefinder.net/support/wp-content/uploads/2018/01/orange_circles.gif);
+            /* background-position: center; */
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            position: absolute;
+            left: 600px;
+            top: 250px;
+           
+        }
+        #contect
+        {
+            width: 100%;
+            height: auto;
+            display: none;
+            position: relative;
+
+        }
+    </style>
+   
+</head>
+<body onload="disp()">
+    <div id="loader"></div>
+    <section id="contect">
+
+    <h1 style="text-align: center;">Hello !</h1>
+    
+
+     <script>
+       var load;
+       function disp()
+       {
+
+       load=setTimeout("display()",1000);
+
+       }
+ 
+      function display()
+      {
+       document.getElementById("contect").style="display:block !important";
+       document.getElementById("loader").style="display:none !important";
+      }
+
+      </script>
+</body>
+</html>
